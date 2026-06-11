@@ -13,10 +13,8 @@ A lightweight, responsive web application designed to help users log income, tra
 ## 📁 Project Structure
 The project consists of three core files:
 
-Expense Tracker/
-├── index.html   # Main layout, structure, and form inputs
-├── styles.css   # Modern UI styling and layout configuration
-└── script.js    # Logic for state management, DOM rendering, and storage
+<img width="449" height="74" alt="image" src="https://github.com/user-attachments/assets/633443d5-74e5-4938-a721-74bf7efa5749" />
+
 
 ## 🛠️ Tech Stack
 

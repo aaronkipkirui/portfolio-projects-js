@@ -1,5 +1,3 @@
-Here is a comprehensive, production-ready README.md tailored for your Expense Tracker project based on its repository structure.
-------------------------------
 ## 💰 Vanilla JS Expense Tracker
 A lightweight, responsive web application designed to help users log income, track expenses, and view their real-time financial balance. Built using pure vanilla web technologies as part of a JavaScript portfolio collection.
 ## 🚀 Features

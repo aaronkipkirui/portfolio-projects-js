@@ -50,7 +50,7 @@ function createTransactionEl(transaction) {
     li.innerHTML = `
         <span>${transaction.description}</span>
         <span>
-            ${transaction.amount}
+            ${formatCurrency(transaction.amount)}
             <button class="delete-btn" onclick="removeTransaction(${transaction.id})">x</button>
         </span>
 
@@ -71,7 +71,27 @@ function updateSummary() {
     .reduce((acc, transaction) => acc + transaction.amount, 0)
 
     // update ui
-    balanceEl.textContent = balance;
-    incomeAmountEl.textContent = income;
-    expenseAmountEl.textContent = expense;
+    balanceEl.textContent = formatCurrency(balance);
+    incomeAmountEl.textContent = formatCurrency(income);
+    expenseAmountEl.textContent = formatCurrency(expense);
 }
+
+function formatCurrency(number) {
+    return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "KES",
+
+    }).format(number)
+}
+
+// transaction delete
+function removeTransaction(id) {
+    transactions = transactions.filter(transaction => transaction.id !== id);
+    localStorage.setItem("transactions", JSON.stringify(transactions));
+    
+    updateTransactionsList();
+    updateSummary();
+}
+// initial render
+updateTransactionsList();
+updateSummary();

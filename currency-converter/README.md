@@ -31,7 +31,7 @@ You do not need to install any heavy packages or build configurations to run thi
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/aaronkipkirui/portfolio-projects-js/new/main/currency-converter
+   git clone https://github.com/aaronkipkirui/portfolio-projects-js/tree/main/currency-converter
    ```
 2. **Navigate to the project directory:**
    ```bash
